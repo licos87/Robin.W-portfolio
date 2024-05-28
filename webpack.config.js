@@ -43,7 +43,7 @@ module.exports = {
 			},
 
 			{
-				test: /\.(c|sa|sc)ss$/i,  // обрабатывает файлы которые есть css|sass|scss
+				test: /\.(c|sa|sc)ss$/i,  // обрабатывает файлы которые есть css|sass|sass
 				use: [
 					devMode ? 'style-loader' : MiniCssExtractPlugin.loader,  // если devMode то используем style-loader иначе (продакшен мод) MiniCssExtractPlugin.loader
 					'css-loader',
